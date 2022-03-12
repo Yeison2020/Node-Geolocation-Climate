@@ -4,3 +4,5 @@ const main = async () => {
   const text = await leerInput("Hello World Yeison");
   console.log(text);
 };
+
+main();
