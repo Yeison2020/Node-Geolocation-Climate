@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/Yeison2020/Node-Geolocation-Climate#readme",
   "dependencies": {
-    "color": "^4.2.1",
+    "colors": "^1.4.0",
     "inquirer": "^8.2.1"
   }
 }
