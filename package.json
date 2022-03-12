@@ -1,0 +1,24 @@
+{
+  "name": "node-geolocation-climate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yeison2020/Node-Geolocation-Climate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yeison2020/Node-Geolocation-Climate/issues"
+  },
+  "homepage": "https://github.com/Yeison2020/Node-Geolocation-Climate#readme",
+  "dependencies": {
+    "color": "^4.2.1",
+    "inquirer": "^8.2.1"
+  }
+}
