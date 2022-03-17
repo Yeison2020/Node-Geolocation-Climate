@@ -11,6 +11,8 @@ const main = async () => {
     switch (opt) {
       case 1:
         // Show message
+        const lugar = await leerInput("Ciudad:");
+        console.log(lugar);
 
         // Search places
 
@@ -29,7 +31,6 @@ const main = async () => {
 
         break;
     }
-    console.log({ opt });
 
     if (opt !== 0) await pausa();
   } while (opt !== 0);
