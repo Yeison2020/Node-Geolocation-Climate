@@ -19,7 +19,13 @@ const main = async () => {
         // Weather data
 
         // Show those results
-        console.log(`\n Inofrmation de la ciudad\n`.green);
+        console.log("\n Inofrmation de la ciudad\n".green);
+        console.log("Ciudad:");
+        console.log("Lat:");
+        console.log("Lng:");
+        console.log("Tempertura:");
+        console.log("Minima:");
+        console.log("Maxima:");
 
         break;
     }
