@@ -12,7 +12,7 @@ const main = async () => {
       case 1:
         // Show message
         const lugar = await leerInput("Ciudad:");
-        console.log(lugar);
+        busquedas.ciudad(lugar);
 
         // Search places
 
@@ -21,7 +21,7 @@ const main = async () => {
         // Weather data
 
         // Show those results
-        console.log("\n Inofrmation de la ciudad\n".green);
+        console.log("\n Information de la ciudad\n".green);
         console.log("Ciudad:");
         console.log("Lat:");
         console.log("Lng:");

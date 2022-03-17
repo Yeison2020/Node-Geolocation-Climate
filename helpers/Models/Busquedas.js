@@ -1,3 +1,5 @@
+const axios = require("axios").default;
+
 class Busquedas {
   historial = ["Tegucigalpa", "Madrid", "San Jose"];
   constructor() {
@@ -7,7 +9,7 @@ class Busquedas {
   async ciudad(lugar = "") {
     // HTTP Request
 
-    console.log(lugar);
+    console.log("Ciudad:", lugar);
 
     return []; // Return an  array that matches the array of names availables
   }
