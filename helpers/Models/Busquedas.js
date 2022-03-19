@@ -19,8 +19,7 @@ class Busquedas {
 
     const getParamsMapBox = () => {
       return {
-        access_token:
-          "pk.eyJ1IjoieWVpc29uNjk1IiwiYSI6ImNsMHkwNzF6ODF3OTAzY3A0MTYwcnkwYm8ifQ.8KheJHm4b8znESJHQnbpqw",
+        access_token: process.env.MAPBOX_KEY,
 
         language: "es",
         proximity: "ip",
