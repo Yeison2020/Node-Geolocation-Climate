@@ -20,7 +20,7 @@ class Busquedas {
     const getParamsMapBox = () => {
       return {
         access_token: process.env.MAPBOX_KEY,
-
+        limit: 5,
         language: "es",
         proximity: "ip",
       };
