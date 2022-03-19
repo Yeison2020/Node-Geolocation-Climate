@@ -1,5 +1,10 @@
 require("dotenv").config();
-const { leerInput, inquirerMenu, pausa } = require("./helpers/inquirer.js");
+const {
+  leerInput,
+  inquirerMenu,
+  pausa,
+  listadrLugares,
+} = require("./helpers/inquirer.js");
 const Busquedas = require("./helpers/Models/Busquedas.js");
 
 const main = async () => {
@@ -13,12 +18,11 @@ const main = async () => {
       case 1:
         // Show message
         const lugar = await leerInput("Ciudad:");
-        const places = await busquedas.ciudad(lugar);
-        console.log(places);
-
         // Search places
-
+        const places = await busquedas.ciudad(lugar);
         // Chose the place
+        const id = listadrLugares(places);
+        console.log({ id });
 
         // Weather data
 
