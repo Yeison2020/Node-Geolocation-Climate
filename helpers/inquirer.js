@@ -5,7 +5,7 @@ const preguntas = [
   {
     type: "list",
     name: "opcion",
-    message: "¿Qué desea hacer?",
+    message: "¿Qué desea hacer User?",
     choices: [
       {
         value: 1,
@@ -55,7 +55,7 @@ const leerInput = async (message) => {
       message,
       validate(value) {
         if (value.length === 0) {
-          return "Por favor ingrese un valor";
+          return "Por favor ingrese un valor Numero only";
         }
         return true;
       },
