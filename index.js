@@ -22,7 +22,7 @@ const main = async () => {
         const places = await busquedas.ciudad(lugar);
         // Chose the place
         const id = listadrLugares(places);
-        console.log({ id });
+        // console.log({ id });
 
         // Weather data
 

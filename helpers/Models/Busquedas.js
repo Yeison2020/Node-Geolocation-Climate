@@ -26,7 +26,7 @@ class Busquedas {
       };
     };
 
-    console.log("Ciudad:", lugar);
+    // console.log("Ciudad:", lugar);
     const instance = axios.create({
       baseURL: `https://api.mapbox.com/geocoding/v5/mapbox.places/${lugar}.json`,
       params: getParamsMapBox(),
