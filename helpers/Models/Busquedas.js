@@ -7,9 +7,11 @@ class Busquedas {
     "San Jose",
     "San cristobal",
     "Santo Domingo",
+    "San Jose de Ocoa",
   ];
   constructor() {
     // TODO  LEER DB si existentes
+    // Here I will read my DB
   }
 
   async ciudad(lugar = "") {
