@@ -19,9 +19,16 @@ class Busquedas {
 
     console.log("Ciudad:", lugar);
     const instance = axios.create({
-      baseURL: `https://api.mapbox.com/geocoding/v5/mapbox.places/${lugar}.json?proximity=ip&language=es&access_token=pk.eyJ1IjoieWVpc29uNjk1IiwiYSI6ImNsMHkwNzF6ODF3OTAzY3A0MTYwcnkwYm8ifQ.8KheJHm4b8znESJHQnbpqw`,
+      baseURL: `https://api.mapbox.com/geocoding/v5/mapbox.places/${lugar}.json`,
+      params: {
+        access_token:
+          "pk.eyJ1IjoieWVpc29uNjk1IiwiYSI6ImNsMHkwNzF6ODF3OTAzY3A0MTYwcnkwYm8ifQ.8KheJHm4b8znESJHQnbpqw",
+
+        language: "es",
+        proximity: "ip",
+      },
     });
-    const resp = await axios.get("");
+    const resp = await instance.get();
     console.log(resp.data);
 
     return [resp.data.per_page]; // Return an  array that matches the array of names availables
